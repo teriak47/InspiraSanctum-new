@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&family=UnifrakturMaguntia&display=swap');
+
+:root {
+  /* Couleurs */
+  --color-navy: #0a1128;
+  --color-gold: #d4af37;
+  --color-silver: #c0c0c0;
+  --color-scarlet: #ff2400;
+  --color-charcoal: #222222;
+  --color-silver-light: #dcdcdc;
+
+  /* Typographie */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --font-decorative: 'UnifrakturMaguntia', cursive;
+}
+
+/* Styles de base */
+body {
+  font-family: var(--font-secondary);
+  color: var(--color-silver);
+  background-color: var(--color-navy);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+}
+
+/* Styles des boutons */
+.btn-primary {
+  @apply px-4 py-2 rounded-md font-medium transition-colors;
+  background-color: var(--color-scarlet);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-gold);
+}
